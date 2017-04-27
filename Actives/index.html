@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>{{tittle}}</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="src/index.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse  inverse tou">
+    <div class="container-fluid">
+        <ul class="nav nav-pills navbar-right">
+            <li role="presentation" ><a href="#">注册</a></li>
+            <li role="presentation" ><a href="#">登录</a></li>
+            <li role="presentation" ><a href="#">通知</a></li>
+            <li role="presentation" ><a href="#">设置</a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-default logo">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+            <div class="col-md-2 text-center login">
+                    <h2>三鑫金汇社区</h2>
+                    <span>一站式惠民服务平台</span>
+            </div>
+            <div class="col-md-6">
+                <ul class="nav cai nav-pills nav-justified home">
+                    <li role="presentation" ><a ui-sref="home" ui-sref-active="tabs">首页 <span class="sr-only">(current)</span></a></li>
+                    <li role="presentation" ><a ui-sref="she" ui-sref-active="tabs">社区团体活动服务</a></li>
+                    <li role="presentation" ><a ui-sref="dang" ui-sref-active="tabs">党组织活动服务</a></li>
+                    <li role="presentation"><a  ui-sref="ju" ui-sref-active="tabs">居民自治活动服务</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div ui-view></div>
+
+
+<script src="public/jquery1.7.js"></script>
+<script src="public/angular.js"></script>
+<script src="public/angular-ui-router.js"></script>
+<script src="public/app.js"></script>
+<script src="public/files.js"></script>
+</body>
+</html>

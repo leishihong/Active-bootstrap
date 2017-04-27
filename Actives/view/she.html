@@ -1,0 +1,41 @@
+<div>
+    <nav class="navbar navbar-default bread">
+        <div class="container-fluid">
+            <ol class="breadcrumb row">
+                <li><a href="#">当前位置：首页  </a></li>
+                <li><a href="#">社区养老</a></li>
+                <li class="active">离休退休</li>
+            </ol>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-default default logo">
+        <div class="container-fluid tu">
+            <div class="row">
+                <dl class="row">
+                    <dt class="col-md-1 col-sm-1">
+                    <div class="dt">
+                        <img src="./img/icon.png" >
+                    </div>
+                    </dt>
+                    <dd  class="col-md-11">
+                        <h3>社区生日会</h3>
+                        <p>提供社区五保供养申请的办理指南、注意事项、办理机构等相关的服务。</p>
+                    </dd>
+                </dl>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid nav-divider">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" ui-sref="she.huo" ui-sref-active="active"><a data-target="#home" aria-controls="home" role="tab" data-toggle="tab">活动介绍</a></li>
+            <li role="presentation" ui-sref="she.cha" ui-sref-active="active"><a data-target="#profile" aria-controls="profile" role="tab" data-toggle="tab">查看活动</a></li>
+            <li role="presentation" ui-sref="she.zong" ui-sref-active="active"><a data-target="#messages" aria-controls="messages" role="tab" data-toggle="tab">活动总结</a></li>
+        </ul>
+        <div ui-view></div>
+    </div>
+
+</div>
+

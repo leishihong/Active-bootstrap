@@ -1,0 +1,51 @@
+<!--内容1-->
+<nav class="nav contant">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-11 col-sm-11">
+                <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+                    <h4 id="info1">基本信息</h4>
+                    <p>责任人：张鑫  13023948374</p>
+                    <p>责任人单位：南风里居委会</p>
+                    <h4 id="info2">请输入栏目名称</h4>
+                    <input-file></input-file>
+                   <!-- <div class="input-file">
+                        <label for="input1"></label>
+                        <input type="file" id="input1">
+                    </div>-->
+                    <h4 id="area">评论区</h4>
+                    <table class="table table-hover">
+                        <tbody>
+                        <tr class="clo-md-12" ng-repeat="x in list">
+                            <td class="col-md-10">{{x.name}}</td>
+                            <td class="col-md-1">{{x.time}}</td>
+                            <td class="col-md-1">{{x.back}}</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    <div class="info">
+                        <input type="text">
+                        <button type="button" class="btn btn-primary btn">发送</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-1">
+                    <nav id="navbar-example2" class="navbar nav-side">
+
+                        <div class="timeline-wrap clearfix">
+                            <span class="circle top"></span>
+                            <span class="circle bottom"></span>
+                            <ul class="nav navbar-nav time-line">
+                                <li class=""><a data-target="#info1">基本信息</a></li>
+                                <li class="active"><a data-target="#info2">请输入栏目名称</a></li>
+                                <li class="dropdown"><a data-target="#area">评论区</a></li>
+                            </ul>
+                        </div>
+
+                    </nav>
+                </div>
+        </div>
+    </div>
+</nav>
